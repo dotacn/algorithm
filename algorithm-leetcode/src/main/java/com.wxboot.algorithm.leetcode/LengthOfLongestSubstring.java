@@ -11,8 +11,12 @@ public class LengthOfLongestSubstring {
         }
 
         int[] bucket = new int[128];
-        // 使用原生 for 速度会更快
-        IntStream.iterate(0, n -> n + 1).limit(127).forEach(n -> bucket[n] = -1);
+        // 使用原生 for 速度会更快 8ms
+        for (int i = 0; i < bucket.length; i++) {
+            bucket[(char) i] = -1;
+        }
+        // 100ms
+        // IntStream.iterate(0, n -> n + 1).limit(127).forEach(n -> bucket[n] = -1);
 
         char[] arr = s.toCharArray();
         int left = -1;
