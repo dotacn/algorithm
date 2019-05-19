@@ -8,11 +8,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>algorithm-leetcode</module>
-		<module>algorithm-leetcode</module>
 	</modules>
 	<packaging>pom</packaging>
 
-	<name>algorithm</name>
+	<name>algorithm-parent</name>
 	<description>算法题解过程</description>
 
 	<properties>
