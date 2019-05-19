@@ -1,3 +1,5 @@
+package com.wxboot.algorithm.leetcode;
+
 public class ReverseNumber {
 
     
